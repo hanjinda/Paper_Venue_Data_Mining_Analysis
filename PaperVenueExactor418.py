@@ -23,7 +23,7 @@ curr_venue = ""
 curr_year = ""
 
 # venue of conferece list
-venues = ["EDBT","SDM","ICDE","CIKM","CVPR","VLDB","PODS","PAKDD","PKDD","ECML","AAAI","ECIR","SIGIR","WWW","IJCAI","SIGMOD Conference", "ICDM", "KDD", "ICML", "WSDM"]
+venues = ["EDBT","SDM","ICDE","CIKM","VLDB","PODS","PAKDD","PKDD","ECIR","SIGIR","WWW","SIGMOD Conference", "ICDM", "KDD", "WSDM"]
 
 for num, line in enumerate(file_open):
 	#print num
