@@ -13,7 +13,7 @@ ICDE
 
 CIKM
 
-CVPR
+CVPR - reduced
 
 VLDB
 
@@ -23,9 +23,9 @@ PAKDD
 
 PKDD
 
-ECML
+ECML - reduced
 
-AAAI
+AAAI - reduced
 
 ECIR
 
@@ -33,7 +33,7 @@ SIGIR
 
 WWW
 
-IJCAI
+IJCAI - reduced
 
 SIGMOD Conference
 
@@ -41,7 +41,7 @@ ICDM
 
 KDD
 
-ICML
+ICML - reduced
 
 WSDM
 
