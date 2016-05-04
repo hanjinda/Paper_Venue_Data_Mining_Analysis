@@ -68,7 +68,7 @@ else:
     # then set to 1 if there is at least one path 
     # np.dot(W_first, W_first_T, W_second)
     W_first_T = W_first.transpose()
-    W_second = fastdot.dot(W_first, W_first_T)
+    W_second = fastdot.dot(W_first, W_first_T)  #np.dot
     np.fill_diagonal(W_second, 0.0)
     np.save('W_second.npy', W_second)
 
@@ -81,7 +81,7 @@ else:
     # then set to 1 if there is at least one path 
     # np.dot(W_first, W_first_T, W_second)
     W_second_T = W_second.transpose()
-    W_third = fastdot.dot(W_second, W_second_T)
+    W_third = fastdot.dot(W_second, W_second_T) #np.dot
     np.fill_diagonal(W_third, 0.0)
     np.save('W_third.npy', W_second)
 
