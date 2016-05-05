@@ -65,3 +65,5 @@ WSDM
 - #% ---- the id of references of this paper (there are multiple lines, with each indicating a reference)
 
 你爬数据的时候就是删除前面的#， @，* 这些
+
+## proximityRank.py 算proximity
