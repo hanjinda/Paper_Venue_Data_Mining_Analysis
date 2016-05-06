@@ -3,13 +3,28 @@ import fastdot
 import os
 from operator import itemgetter
 
+from calculateProximityRankScore import calculateProximityRankScore
 
 papers = []
+authorToPaper = dict()
+paperToAuthor = dict()
 citation = []
 idHash = dict()
 
 # number of papers
 numPaper = 0
+
+# loading author paper relationship
+count = 0
+f = open("pub_out_paperid_author.txt", 'r')
+for line in f: 
+    items = line.split("\t")
+    authorName = items[1].rstrip('\r\n')
+    paperToAuthor[count] = authorName
+    if not authorToPaper.has_key(authorName):
+        authorToPaper[authorName] = []
+    authorToPaper[authorName].append(items[0])
+    count += 1
 
 # loading paper id and names
 # papers = [ ['paperid0', 'papername0'], 
@@ -36,9 +51,9 @@ numPaper = len(papers)
 #               ... ...
 #            ]
 
+citationCount1stOrder = np.zeros(numPaper)
 citationCount2ndOrder = np.zeros(numPaper)
 
-count = -1
 f = open("pub_out_paperid_citpaper.txt", 'r')
 for line in f:
     items = line.split("\t")
@@ -46,8 +61,7 @@ for line in f:
         citation[len(citation)-1].append(items[1].rstrip('\r\n'))
     else:
         citation.append([items[0], items[1].rstrip('\r\n')])
-        count += 1
-    citationCount2ndOrder[count] += 1
+
 
 # W_first and W_second are adjacency matrices, both #papers by # papers
 # W_first[i][j] = 1 if the ith paper is cited or cites the jth paper
@@ -55,11 +69,19 @@ for line in f:
 
 W_first = np.zeros((numPaper, numPaper))
 W_second = np.zeros((numPaper, numPaper))
+W_third = np.zeros((numPaper, numPaper))
 
 for item in citation:
     for i in range(1,len(item)):
         if idHash.has_key(item[0]) and idHash.has_key(item[i]):
             W_first[idHash[item[0]],idHash[item[i]]] += 1
+    if idHash.has_key(item[0]):        
+        citationCount1stOrder[idHash[item[0]]] = len(item) - 1
+
+
+citationCount2ndOrder = np.dot(W_first, citationCount1stOrder) - citationCount1stOrder
+
+# second order adjacency matrix
 
 if os.path.exists("W_second.npy"):
     W_second = np.load('W_second.npy')
@@ -72,7 +94,7 @@ else:
     np.fill_diagonal(W_second, 0.0)
     np.save('W_second.npy', W_second)
 
-# calculate W_second till this line
+# third order adjacency matrix
 
 if os.path.exists("W_third.npy"):
     W_second = np.load('W_third.npy')
@@ -88,41 +110,38 @@ else:
 
 
 
-# calculate number of paths between two papers on third order, commented out to reduce calculation
-# thirdOrder = np.dot(secondOrder, secondOrder.transpose())
-
-# simularity calculation (1st order)
-# for testing purposes, we chood to calculate simularity for the 4th paper, i.e. paper[3]
-# note that some papers, for example, paper[0], it doesn't have any 1st order connections due to the sparsity of our citation network
-# paper[0] has citations, but are not listed in our set of papers
-queryIndex = idHash['473736']
-paperUnion = []
-for i in range(numPaper):
-    paperUnion.append( citationCount2ndOrder[queryIndex] + citationCount2ndOrder[i] - W_first[queryIndex][i])
-
-similarity2ndOrder = W_first[queryIndex]/paperUnion
-
-#TODO: rank similarity1stOrder
-
-#2nd order citation count, if A cites B which cites C, then A has one 2nd order citation count
-paperUnion = []
-for i in range(numPaper):
-    paperUnion.append( citationCount2ndOrder[queryIndex] + citationCount2ndOrder[i] - W_second[queryIndex][i])
-
-similarity2nOrder = W_second[queryIndex]/paperUnion
+# query for author similarity
 
 
-# citationCount3rdOrder = np.dot(W_first, citationCount1stOrder) - citationCount1stOrder
+queryAuthor = "Christos Faloutsos"
+# queryAuthor = "Jiawei Han"
 
-PaperScores = []
-for i in range(numPaper):
-    PaperScores.append((similarity2ndOrder[i],i))
 
-sortedPaperScores = sorted(PaperScores, key = itemgetter(0), reverse = True)
-print "Sorted paper scores for paper: " + papers[queryIndex][1]
+# simularity calculation 
+
+authorCount = dict()
+
+for paper in authorToPaper[queryAuthor]:
+    paperScore = calculateProximityRankScore (idHash[paper], W_first, W_second, W_third, citationCount1stOrder,citationCount2ndOrder)
+    sortedPaperScore = sorted(paperScore, key = itemgetter(0), reverse = True)
+    for score in sortedPaperScore:
+        scoreValue = score[0]
+        if np.isnan(scoreValue) or np.isinf(scoreValue):
+            scoreValue = 0
+        if authorCount.has_key(paperToAuthor[score[1]]):
+            authorCount[paperToAuthor[score[1]]] += scoreValue
+        else:
+            authorCount[paperToAuthor[score[1]]] = scoreValue
+
+authorScore = []
+for key, value in authorCount.iteritems():
+    authorScore.append((value, key))
+
+sortedAuthorScore = sorted(authorScore, key = itemgetter(0), reverse = True)
+
+print "Sorted author scores for author: " + queryAuthor
 for i in range(10):
-    print str(i+1)+"th similar paper: "+papers[sortedPaperScores[i][1]][1].rstrip('\n')+" with score: "+str(sortedPaperScores[i][0])
-
+    print str(i+1)+"th similar author: "+ sortedAuthorScore[i][1] +" with score: "+str(sortedAuthorScore[i][0])
 
 
 
