@@ -246,7 +246,7 @@ pathSimSortedAuthorScores = sorted(pathSimAuthorScores, key = itemgetter(0), rev
 print "PathSim ranking scores for author: " + queryAuthor
 
 for i in range(10):
-    print str(i+1)+"th similar author: "+ authors[pathSimSortedAuthorScores[i][1]]+" with score: "+str(pathSimSortedAuthorScores[i][0])
+    print str(i+1)+"th similar author: "+ pathSimSortedAuthorScores[i][1]+" with score: "+str(pathSimSortedAuthorScores[i][0])
 
 print "STEP13: calculating combined score ..."
 
