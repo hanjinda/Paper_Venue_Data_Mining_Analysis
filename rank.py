@@ -141,7 +141,7 @@ else:
     W_second_T = W_second.transpose()
     W_third = np.dot(W_second, W_second_T) #np.dot
     np.fill_diagonal(W_third, 0.0)
-    np.save('W_third.npy', W_second)
+    np.save('W_third.npy', W_third)
 
 
 print "STEP7: calculating proximity ranking ..."
@@ -178,7 +178,7 @@ for i in range(10):
 #
 #
 #
-#    Proximity Rank
+#    Path Sim Rank
 #
 #
 #
@@ -208,7 +208,7 @@ print "STEP10: calculating venue paper adjacency matrix ..."
 
 W_pv = np.zeros((numPaper, 20))
 prevVenue = ""
-count = 0
+count = -1
 f = open("pub_out_paperid_venues.txt", 'r')
 for line in f: 
     items = line.split("\t")
@@ -216,7 +216,7 @@ for line in f:
     if venue != prevVenue:
         count += 1
         prevVenue = venue
-    W_pv[idHash[item[0]]][count] = 1
+    W_pv[idHash[items[0]]][count] = 1
 
 
 
@@ -255,7 +255,7 @@ print "STEP13: calculating combined score ..."
 proximityScoreMax = proximitySortedAuthorScore[0][0]
 pathScoreMax = pathSimSortedAuthorScores[0][0]
 
-scoreSum = np.array((1,len(authors)))
+scoreSum = np.zeros(len(authors))
 
 for score in proximitySortedAuthorScore:
     scoreSum[authors[score[1]]] += alpha * score[0]/proximityScoreMax
@@ -266,7 +266,7 @@ for score in pathSimSortedAuthorScores:
 combinedScores = []
 
 for i in range(len(authors)):
-    combinedScores.append(scoreSum[i], i)
+    combinedScores.append((scoreSum[i], i))
 
 sortedcombinedScores = sorted(combinedScores, key = itemgetter(0), reverse = True)
 
