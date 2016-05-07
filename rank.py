@@ -187,11 +187,13 @@ for i in range(10):
 print "STEP8: loading authors and author ids ..."
 
 authors = dict()
+indexToAuthors = dict()
 
 count = 0
 f = open("pub_out_authers.txt", 'r')
 for line in f: 
     authors[line.rstrip('\r\n')] = count
+    indexToAuthors[count] = line.rstrip('\r\n')
     count += 1
 
 print "STEP9: calculating author paper adjacency matrix ..."
@@ -246,7 +248,7 @@ pathSimSortedAuthorScores = sorted(pathSimAuthorScores, key = itemgetter(0), rev
 print "PathSim ranking scores for author: " + queryAuthor
 
 for i in range(10):
-    print str(i+1)+"th similar author: "+ pathSimSortedAuthorScores[i][1]+" with score: "+str(pathSimSortedAuthorScores[i][0])
+    print str(i+1)+"th similar author: "+ indexToAuthors[pathSimSortedAuthorScores[i][1]]+" with score: "+str(pathSimSortedAuthorScores[i][0])
 
 print "STEP13: calculating combined score ..."
 
@@ -256,7 +258,7 @@ pathScoreMax = pathSimSortedAuthorScores[0][0]
 scoreSum = np.array((1,len(authors)))
 
 for score in proximitySortedAuthorScore:
-    scoreSum[score[1]] += alpha * score[0]/proximityScoreMax
+    scoreSum[authors[score[1]]] += alpha * score[0]/proximityScoreMax
 
 for score in pathSimSortedAuthorScores:
     scoreSum[score[1]] += alpha * score[0]/pathScoreMax
@@ -272,6 +274,6 @@ sortedcombinedScores = sorted(combinedScores, key = itemgetter(0), reverse = Tru
 print "Combined ranking scores for author: " + queryAuthor
 
 for i in range(10):
-    print str(i+1)+"th similar author: "+ sortedcombinedScores[i][1] +" with score: "+str(sortedcombinedScores[i][0])
+    print str(i+1)+"th similar author: "+ indexToAuthors[sortedcombinedScores[i][1]] +" with score: "+str(sortedcombinedScores[i][0])
 
 
