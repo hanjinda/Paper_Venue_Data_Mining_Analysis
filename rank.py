@@ -6,7 +6,7 @@ import Queue as Q
 from calculateProximityRankScore import calculateProximityRankScore
 
 # Parameters #
-queryAuthor = "Christos Faloutsos"
+queryAuthor = "Jiawei Han"
 secondOrderThreshold = 0.1
 thirdOrderThreshold = 0.1
 # score = alpha * proximityRankScore + (1-alpha) * pathSimRankScore 
@@ -133,7 +133,7 @@ print "STEP6: calculating/loading third order adjacency matrix..."
 # third order adjacency matrix
 
 if os.path.exists("W_third.npy"):
-    W_second = np.load('W_third.npy')
+    W_third = np.load('W_third.npy')
 else:
     # calculate number of paths between two papers on second order
     # then set to 1 if there is at least one path 
@@ -168,8 +168,11 @@ for key, value in authorCount.iteritems():
     proximityAuthorScore.append((value, key))
 
 proximitySortedAuthorScore = sorted(proximityAuthorScore, key = itemgetter(0), reverse = True)
+print "===================================================="
 
 print "Proximity ranking scores for author: " + queryAuthor
+print "===================================================="
+
 for i in range(10):
     print str(i+1)+"th similar author: "+ proximitySortedAuthorScore[i][1] +" with score: "+str(proximitySortedAuthorScore[i][0])
 
@@ -244,8 +247,10 @@ for i in range(len(authors)):
     pathSimAuthorScores.append((score,i))
 
 pathSimSortedAuthorScores = sorted(pathSimAuthorScores, key = itemgetter(0), reverse = True)
+print "===================================================="
 
 print "PathSim ranking scores for author: " + queryAuthor
+print "===================================================="
 
 for i in range(10):
     print str(i+1)+"th similar author: "+ indexToAuthors[pathSimSortedAuthorScores[i][1]]+" with score: "+str(pathSimSortedAuthorScores[i][0])
@@ -270,8 +275,10 @@ for i in range(len(authors)):
 
 sortedcombinedScores = sorted(combinedScores, key = itemgetter(0), reverse = True)
 
-
+print "===================================================="
 print "Combined ranking scores for author: " + queryAuthor
+print "===================================================="
+
 
 for i in range(10):
     print str(i+1)+"th similar author: "+ indexToAuthors[sortedcombinedScores[i][1]] +" with score: "+str(sortedcombinedScores[i][0])
