@@ -224,7 +224,7 @@ print "STEP11: calculating M matrix ..."
 
 
 if os.path.exists("M.npy"):
-    W_second = np.load('M.npy')
+    M = np.load('M.npy')
 else:
     M = np.dot(np.dot(np.dot(W_ap,W_pv), W_vp),W_pa)
     np.save('M.npy', M)
