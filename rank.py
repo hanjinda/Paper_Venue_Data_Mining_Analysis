@@ -262,11 +262,26 @@ pathScoreMax = pathSimSortedAuthorScores[0][0]
 
 scoreSum = np.zeros(len(authors))
 
+# hahaha = 1
+
 for score in proximitySortedAuthorScore:
     scoreSum[authors[score[1]]] += alpha * score[0]/proximityScoreMax
+    # if hahaha <= 10:
+    #     print "auth score: "+str(authors[score[1]])
+    #     print "prox: "+str(alpha * score[0]/proximityScoreMax)
+    #     hahaha += 1
+
+hahaha = 1
 
 for score in pathSimSortedAuthorScores:
-    scoreSum[score[1]] += alpha * score[0]/pathScoreMax
+    scoreSum[score[1]] += (1-alpha) * score[0]/pathScoreMax
+    # if hahaha <= 10:
+    #     print "score: "+str(score[1])
+    #     print "path: "+str(alpha * score[0]/pathScoreMax)
+    #     hahaha += 1
+
+# print pathScoreMax
+# print "hanhanhan: "+str(scoreSum[57])
 
 combinedScores = []
 
