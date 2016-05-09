@@ -1,0 +1,716 @@
+a=0.2
+STEP1: loading author paper relationship...
+STEP2: loading paper id and names...
+STEP3: loading paper citation relations...
+STEP4: calculating first order adjacency matrix and citation counts...
+STEP5: calculating/loading second order adjacency matrix...
+STEP6: calculating/loading third order adjacency matrix...
+STEP7: calculating proximity ranking ...
+====================================================
+Proximity ranking scores for author: Jian Pei
+====================================================
+1th similar author: Philip S. Yu with score: 1.0
+2th similar author: Jiawei Han with score: 0.979820824046
+3th similar author: Jeffrey Xu Yu with score: 0.912569611117
+4th similar author: Hans-Peter Kriegel with score: 0.876340674443
+5th similar author: Wei Wang with score: 0.701143744577
+6th similar author: Clement T. Yu with score: 0.612395179145
+7th similar author: Qiang Yang with score: 0.541112683178
+8th similar author: Philip K. Chan with score: 0.52619963806
+9th similar author: Eamonn J. Keogh with score: 0.506520289036
+10th similar author: Carlo Zaniolo with score: 0.477139678477
+STEP8: loading authors and author ids ...
+STEP9: calculating author paper adjacency matrix ...
+STEP10: calculating venue paper adjacency matrix ...
+STEP11: calculating M matrix ...
+STEP12: calculating pathsim ranking ...
+====================================================
+PathSim ranking scores for author: Jian Pei
+====================================================
+1th similar author: Jian Pei with score: 1.0
+2th similar author: Raghu Ramakrishnan with score: 0.999954214551
+3th similar author: Jeffrey F. Naughton with score: 0.99827139153
+4th similar author: Charu C. Aggarwal with score: 0.99827139153
+5th similar author:  with score: 0.99827139153
+6th similar author: H. V. Jagadish with score: 0.997920997921
+7th similar author: Jeffrey Xu Yu with score: 0.995012468828
+8th similar author: Nick Koudas with score: 0.995012468828
+9th similar author: Zheng Chen with score: 0.995012468828
+10th similar author: Rakesh Agrawal with score: 0.994173343044
+STEP13: calculating combined score ...
+====================================================
+Combined ranking scores for author: Jian Pei
+====================================================
+1th similar author: Jeffrey Xu Yu with score: 0.953791039973
+2th similar author: Hans-Peter Kriegel with score: 0.93197625601
+3th similar author: Jiawei Han with score: 0.843949914115
+4th similar author: Wei Wang with score: 0.843735010049
+5th similar author: Philip S. Yu with score: 0.827884337564
+6th similar author: Clement T. Yu with score: 0.788263586703
+7th similar author: Qiang Yang with score: 0.73696389295
+8th similar author: Eamonn J. Keogh with score: 0.730138757235
+9th similar author: Zheng Chen with score: 0.720178148535
+10th similar author: Ming-Syan Chen with score: 0.704229803153
+
+a=0.1
+
+STEP1: loading author paper relationship...
+STEP2: loading paper id and names...
+STEP3: loading paper citation relations...
+STEP4: calculating first order adjacency matrix and citation counts...
+STEP5: calculating/loading second order adjacency matrix...
+STEP6: calculating/loading third order adjacency matrix...
+STEP7: calculating proximity ranking ...
+====================================================
+Proximity ranking scores for author: Jian Pei
+====================================================
+1th similar author: Philip S. Yu with score: 1.0
+2th similar author: Jiawei Han with score: 0.951570461469
+3th similar author: Hans-Peter Kriegel with score: 0.918383409859
+4th similar author: Jeffrey Xu Yu with score: 0.897448509317
+5th similar author: Wei Wang with score: 0.695499826227
+6th similar author: Clement T. Yu with score: 0.62131993165
+7th similar author: Qiang Yang with score: 0.524649792517
+8th similar author: Ke Wang with score: 0.502976372387
+9th similar author: Philip K. Chan with score: 0.500670802953
+10th similar author: Ming-Syan Chen with score: 0.488915593381
+STEP8: loading authors and author ids ...
+STEP9: calculating author paper adjacency matrix ...
+STEP10: calculating venue paper adjacency matrix ...
+STEP11: calculating M matrix ...
+STEP12: calculating pathsim ranking ...
+====================================================
+PathSim ranking scores for author: Jian Pei
+====================================================
+1th similar author: Jian Pei with score: 1.0
+2th similar author: Raghu Ramakrishnan with score: 0.999954214551
+3th similar author: Jeffrey F. Naughton with score: 0.99827139153
+4th similar author: Charu C. Aggarwal with score: 0.99827139153
+5th similar author:  with score: 0.99827139153
+6th similar author: H. V. Jagadish with score: 0.997920997921
+7th similar author: Jeffrey Xu Yu with score: 0.995012468828
+8th similar author: Nick Koudas with score: 0.995012468828
+9th similar author: Zheng Chen with score: 0.995012468828
+10th similar author: Rakesh Agrawal with score: 0.994173343044
+STEP13: calculating combined score ...
+====================================================
+Combined ranking scores for author: Jian Pei
+====================================================
+1th similar author: Hans-Peter Kriegel with score: 0.952997623718
+2th similar author: Jeffrey Xu Yu with score: 0.946230489072
+3th similar author: Wei Wang with score: 0.840913050873
+4th similar author: Jiawei Han with score: 0.829824732827
+5th similar author: Philip S. Yu with score: 0.827884337564
+6th similar author: Clement T. Yu with score: 0.792725962956
+7th similar author: Qiang Yang with score: 0.728732447619
+8th similar author: Ming-Syan Chen with score: 0.721336409407
+9th similar author: Rakesh Agrawal with score: 0.719408556625
+10th similar author: Ke Wang with score: 0.717895737554
+
+a=0.05
+STEP1: loading author paper relationship...
+STEP2: loading paper id and names...
+STEP3: loading paper citation relations...
+STEP4: calculating first order adjacency matrix and citation counts...
+STEP5: calculating/loading second order adjacency matrix...
+STEP6: calculating/loading third order adjacency matrix...
+STEP7: calculating proximity ranking ...
+====================================================
+Proximity ranking scores for author: Jian Pei
+====================================================
+1th similar author: Philip S. Yu with score: 1.0
+2th similar author: Hans-Peter Kriegel with score: 0.680349769772
+3th similar author: Jeffrey Xu Yu with score: 0.679798076922
+4th similar author: Jiawei Han with score: 0.667928465171
+5th similar author: Wei Wang with score: 0.523149581194
+6th similar author: Clement T. Yu with score: 0.480189591926
+7th similar author: Rakesh Agrawal with score: 0.459492476614
+8th similar author: Ming-Syan Chen with score: 0.43283423704
+9th similar author: Ke Wang with score: 0.407996077101
+10th similar author: Carlo Zaniolo with score: 0.39368248017
+STEP8: loading authors and author ids ...
+STEP9: calculating author paper adjacency matrix ...
+STEP10: calculating venue paper adjacency matrix ...
+STEP11: calculating M matrix ...
+STEP12: calculating pathsim ranking ...
+====================================================
+PathSim ranking scores for author: Jian Pei
+====================================================
+1th similar author: Jian Pei with score: 1.0
+2th similar author: Raghu Ramakrishnan with score: 0.999954214551
+3th similar author: Jeffrey F. Naughton with score: 0.99827139153
+4th similar author: Charu C. Aggarwal with score: 0.99827139153
+5th similar author:  with score: 0.99827139153
+6th similar author: H. V. Jagadish with score: 0.997920997921
+7th similar author: Jeffrey Xu Yu with score: 0.995012468828
+8th similar author: Nick Koudas with score: 0.995012468828
+9th similar author: Zheng Chen with score: 0.995012468828
+10th similar author: Rakesh Agrawal with score: 0.994173343044
+STEP13: calculating combined score ...
+====================================================
+Combined ranking scores for author: Jian Pei
+====================================================
+1th similar author: Jeffrey Xu Yu with score: 0.837405272875
+2th similar author: Hans-Peter Kriegel with score: 0.833980803675
+3th similar author: Philip S. Yu with score: 0.827884337564
+4th similar author: Wei Wang with score: 0.754737928357
+5th similar author: Rakesh Agrawal with score: 0.726832909829
+6th similar author: Clement T. Yu with score: 0.722160793094
+7th similar author: Ming-Syan Chen with score: 0.693295731237
+8th similar author: Jiawei Han with score: 0.688003734678
+9th similar author: Ke Wang with score: 0.670405589911
+10th similar author: Divyakant Agrawal with score: 0.666706781099
+
+a=0.3
+
+
+
+STEP1: loading author paper relationship...
+STEP2: loading paper id and names...
+STEP3: loading paper citation relations...
+STEP4: calculating first order adjacency matrix and citation counts...
+STEP5: calculating/loading second order adjacency matrix...
+STEP6: calculating/loading third order adjacency matrix...
+STEP7: calculating proximity ranking ...
+====================================================
+Proximity ranking scores for author: Jian Pei
+====================================================
+1th similar author: Philip S. Yu with score: 1.0
+2th similar author: Jiawei Han with score: 0.97051467586
+3th similar author: Jeffrey Xu Yu with score: 0.895101921206
+4th similar author: Hans-Peter Kriegel with score: 0.858453857365
+5th similar author: Wei Wang with score: 0.692490201453
+6th similar author: Clement T. Yu with score: 0.603809506947
+7th similar author: Qiang Yang with score: 0.541112683178
+8th similar author: Philip K. Chan with score: 0.52619963806
+9th similar author: Eamonn J. Keogh with score: 0.506520289036
+10th similar author: Carlo Zaniolo with score: 0.477139678477
+STEP8: loading authors and author ids ...
+STEP9: calculating author paper adjacency matrix ...
+STEP10: calculating venue paper adjacency matrix ...
+STEP11: calculating M matrix ...
+STEP12: calculating pathsim ranking ...
+====================================================
+PathSim ranking scores for author: Jian Pei
+====================================================
+1th similar author: Jian Pei with score: 1.0
+2th similar author: Raghu Ramakrishnan with score: 0.999954214551
+3th similar author: Jeffrey F. Naughton with score: 0.99827139153
+4th similar author: Charu C. Aggarwal with score: 0.99827139153
+5th similar author:  with score: 0.99827139153
+6th similar author: H. V. Jagadish with score: 0.997920997921
+7th similar author: Jeffrey Xu Yu with score: 0.995012468828
+8th similar author: Nick Koudas with score: 0.995012468828
+9th similar author: Zheng Chen with score: 0.995012468828
+10th similar author: Rakesh Agrawal with score: 0.994173343044
+STEP13: calculating combined score ...
+====================================================
+Combined ranking scores for author: Jian Pei
+====================================================
+1th similar author: Jeffrey Xu Yu with score: 0.945057195017
+2th similar author: Hans-Peter Kriegel with score: 0.923032847471
+3th similar author: Wei Wang with score: 0.839408238487
+4th similar author: Jiawei Han with score: 0.839296840022
+5th similar author: Philip S. Yu with score: 0.827884337564
+6th similar author: Clement T. Yu with score: 0.783970750604
+7th similar author: Qiang Yang with score: 0.73696389295
+8th similar author: Eamonn J. Keogh with score: 0.730138757235
+9th similar author: Zheng Chen with score: 0.720178148535
+10th similar author: Ming-Syan Chen with score: 0.699726828224
+
+new methods -lama = 0.5, a=0.1, beta=0.2
+
+STEP1: loading author paper relationship...
+STEP2: loading paper id and names...
+STEP3: loading paper citation relations...
+STEP4: calculating first order adjacency matrix and citation counts...
+STEP5: calculating/loading second order adjacency matrix...
+STEP6: calculating/loading third order adjacency matrix...
+STEP7: calculating proximity ranking ...
+====================================================
+Proximity ranking scores for author: Jian Pei
+====================================================
+1th similar author: Wei Wang with score: 1.0
+2th similar author: Hans-Peter Kriegel with score: 0.987872915425
+3th similar author: Jeffrey Xu Yu with score: 0.903874984293
+4th similar author: Ahmed K. Elmagarmid with score: 0.77365721562
+5th similar author: Philip K. Chan with score: 0.726849669591
+6th similar author: Ke Wang with score: 0.66900439098
+7th similar author: Christian Böhm with score: 0.640353616177
+8th similar author: Carlo Zaniolo with score: 0.639003684282
+9th similar author: Il-Yeol Song with score: 0.637021649107
+10th similar author: Eamonn J. Keogh with score: 0.617638958039
+STEP8: loading authors and author ids ...
+STEP9: calculating author paper adjacency matrix ...
+STEP10: calculating venue paper adjacency matrix ...
+STEP11: calculating M matrix ...
+STEP12: calculating pathsim ranking ...
+====================================================
+PathSim ranking scores for author: Jian Pei
+====================================================
+1th similar author: Jian Pei with score: 1.0
+2th similar author: Raghu Ramakrishnan with score: 0.999954214551
+3th similar author: Jeffrey F. Naughton with score: 0.99827139153
+4th similar author: Charu C. Aggarwal with score: 0.99827139153
+5th similar author:  with score: 0.99827139153
+6th similar author: H. V. Jagadish with score: 0.997920997921
+7th similar author: Jeffrey Xu Yu with score: 0.995012468828
+8th similar author: Nick Koudas with score: 0.995012468828
+9th similar author: Zheng Chen with score: 0.995012468828
+10th similar author: Rakesh Agrawal with score: 0.994173343044
+STEP13: calculating combined score ...
+====================================================
+Combined ranking scores for author: Jian Pei
+====================================================
+1th similar author: Wei Wang with score: 0.99316313776
+2th similar author: Hans-Peter Kriegel with score: 0.987742376501
+3th similar author: Jeffrey Xu Yu with score: 0.94944372656
+4th similar author: Ke Wang with score: 0.80090974685
+5th similar author: Zheng Chen with score: 0.794923574158
+6th similar author: Eamonn J. Keogh with score: 0.785698091736
+7th similar author: Jeffrey F. Naughton with score: 0.761409697997
+8th similar author: Qiang Yang with score: 0.746931989942
+9th similar author: Clement T. Yu with score: 0.736247922226
+10th similar author: Carlo Zaniolo with score: 0.726215851179
+
+beta =0.1
+STEP1: loading author paper relationship...
+STEP2: loading paper id and names...
+STEP3: loading paper citation relations...
+STEP4: calculating first order adjacency matrix and citation counts...
+STEP5: calculating/loading second order adjacency matrix...
+STEP6: calculating/loading third order adjacency matrix...
+STEP7: calculating proximity ranking ...
+====================================================
+Proximity ranking scores for author: Jian Pei
+====================================================
+1th similar author: Philip S. Yu with score: 1.0
+2th similar author: Jiawei Han with score: 0.951570461469
+3th similar author: Hans-Peter Kriegel with score: 0.918383409859
+4th similar author: Jeffrey Xu Yu with score: 0.897448509317
+5th similar author: Wei Wang with score: 0.695499826227
+6th similar author: Clement T. Yu with score: 0.62131993165
+7th similar author: Qiang Yang with score: 0.524649792517
+8th similar author: Ke Wang with score: 0.502976372387
+9th similar author: Philip K. Chan with score: 0.500670802953
+10th similar author: Ming-Syan Chen with score: 0.488915593381
+STEP8: loading authors and author ids ...
+STEP9: calculating author paper adjacency matrix ...
+STEP10: calculating venue paper adjacency matrix ...
+STEP11: calculating M matrix ...
+STEP12: calculating pathsim ranking ...
+====================================================
+PathSim ranking scores for author: Jian Pei
+====================================================
+1th similar author: Jian Pei with score: 1.0
+2th similar author: Raghu Ramakrishnan with score: 0.999954214551
+3th similar author: Jeffrey F. Naughton with score: 0.99827139153
+4th similar author: Charu C. Aggarwal with score: 0.99827139153
+5th similar author:  with score: 0.99827139153
+6th similar author: H. V. Jagadish with score: 0.997920997921
+7th similar author: Jeffrey Xu Yu with score: 0.995012468828
+8th similar author: Nick Koudas with score: 0.995012468828
+9th similar author: Zheng Chen with score: 0.995012468828
+10th similar author: Rakesh Agrawal with score: 0.994173343044
+STEP13: calculating combined score ...
+====================================================
+Combined ranking scores for author: Jian Pei
+====================================================
+1th similar author: Hans-Peter Kriegel with score: 0.952997623718
+2th similar author: Jeffrey Xu Yu with score: 0.946230489072
+3th similar author: Wei Wang with score: 0.840913050873
+4th similar author: Jiawei Han with score: 0.829824732827
+5th similar author: Philip S. Yu with score: 0.827884337564
+6th similar author: Clement T. Yu with score: 0.792725962956
+7th similar author: Qiang Yang with score: 0.728732447619
+8th similar author: Ming-Syan Chen with score: 0.721336409407
+9th similar author: Rakesh Agrawal with score: 0.719408556625
+10th similar author: Ke Wang with score: 0.717895737554
+
+beta=0.3
+
+STEP1: loading author paper relationship...
+STEP2: loading paper id and names...
+STEP3: loading paper citation relations...
+STEP4: calculating first order adjacency matrix and citation counts...
+STEP5: calculating/loading second order adjacency matrix...
+STEP6: calculating/loading third order adjacency matrix...
+STEP7: calculating proximity ranking ...
+====================================================
+Proximity ranking scores for author: Jian Pei
+====================================================
+1th similar author: Wei Wang with score: 1.0
+2th similar author: Hans-Peter Kriegel with score: 0.812509298908
+3th similar author: Philip K. Chan with score: 0.783469682664
+4th similar author: Ahmed K. Elmagarmid with score: 0.741069971452
+5th similar author: Il-Yeol Song with score: 0.71375058811
+6th similar author: Christian Böhm with score: 0.694241405033
+7th similar author: Eamonn J. Keogh with score: 0.689177291995
+8th similar author: Jeffrey Xu Yu with score: 0.635441121719
+9th similar author: Carlo Zaniolo with score: 0.600834912091
+10th similar author: Ke Wang with score: 0.573794980556
+STEP8: loading authors and author ids ...
+STEP9: calculating author paper adjacency matrix ...
+STEP10: calculating venue paper adjacency matrix ...
+STEP11: calculating M matrix ...
+STEP12: calculating pathsim ranking ...
+====================================================
+PathSim ranking scores for author: Jian Pei
+====================================================
+1th similar author: Jian Pei with score: 1.0
+2th similar author: Raghu Ramakrishnan with score: 0.999954214551
+3th similar author: Jeffrey F. Naughton with score: 0.99827139153
+4th similar author: Charu C. Aggarwal with score: 0.99827139153
+5th similar author:  with score: 0.99827139153
+6th similar author: H. V. Jagadish with score: 0.997920997921
+7th similar author: Jeffrey Xu Yu with score: 0.995012468828
+8th similar author: Nick Koudas with score: 0.995012468828
+9th similar author: Zheng Chen with score: 0.995012468828
+10th similar author: Rakesh Agrawal with score: 0.994173343044
+STEP13: calculating combined score ...
+====================================================
+Combined ranking scores for author: Jian Pei
+====================================================
+1th similar author: Wei Wang with score: 0.99316313776
+2th similar author: Hans-Peter Kriegel with score: 0.900060568243
+3th similar author: Eamonn J. Keogh with score: 0.821467258714
+4th similar author: Jeffrey Xu Yu with score: 0.815226795274
+5th similar author: Ke Wang with score: 0.753305041638
+6th similar author: Zheng Chen with score: 0.740685869056
+7th similar author: Jeffrey F. Naughton with score: 0.723458998845
+8th similar author: Carlo Zaniolo with score: 0.707131465084
+9th similar author: Qiang Yang with score: 0.690255455011
+10th similar author: Gerhard Weikum with score: 0.685303671336
+
+beta=0.05
+
+STEP1: loading author paper relationship...
+STEP2: loading paper id and names...
+STEP3: loading paper citation relations...
+STEP4: calculating first order adjacency matrix and citation counts...
+STEP5: calculating/loading second order adjacency matrix...
+STEP6: calculating/loading third order adjacency matrix...
+STEP7: calculating proximity ranking ...
+====================================================
+Proximity ranking scores for author: Jian Pei
+====================================================
+1th similar author: Philip S. Yu with score: 1.0
+2th similar author: Jiawei Han with score: 0.940766972582
+3th similar author: Jeffrey Xu Yu with score: 0.712512994451
+4th similar author: Hans-Peter Kriegel with score: 0.65519479036
+5th similar author: Wei Wang with score: 0.540623067156
+6th similar author: Clement T. Yu with score: 0.491289103551
+7th similar author: Ming-Syan Chen with score: 0.446893799097
+8th similar author: Christos Faloutsos with score: 0.395468363077
+9th similar author: Ke Wang with score: 0.3881974846
+10th similar author: Haixun Wang with score: 0.387303587414
+STEP8: loading authors and author ids ...
+STEP9: calculating author paper adjacency matrix ...
+STEP10: calculating venue paper adjacency matrix ...
+STEP11: calculating M matrix ...
+STEP12: calculating pathsim ranking ...
+====================================================
+PathSim ranking scores for author: Jian Pei
+====================================================
+1th similar author: Jian Pei with score: 1.0
+2th similar author: Raghu Ramakrishnan with score: 0.999954214551
+3th similar author: Jeffrey F. Naughton with score: 0.99827139153
+4th similar author: Charu C. Aggarwal with score: 0.99827139153
+5th similar author:  with score: 0.99827139153
+6th similar author: H. V. Jagadish with score: 0.997920997921
+7th similar author: Jeffrey Xu Yu with score: 0.995012468828
+8th similar author: Nick Koudas with score: 0.995012468828
+9th similar author: Zheng Chen with score: 0.995012468828
+10th similar author: Rakesh Agrawal with score: 0.994173343044
+STEP13: calculating combined score ...
+====================================================
+Combined ranking scores for author: Jian Pei
+====================================================
+1th similar author: Jeffrey Xu Yu with score: 0.85376273164
+2th similar author: Philip S. Yu with score: 0.827884337564
+3th similar author: Jiawei Han with score: 0.824422988383
+4th similar author: Hans-Peter Kriegel with score: 0.821403313969
+5th similar author: Wei Wang with score: 0.763474671338
+6th similar author: Clement T. Yu with score: 0.727710548906
+7th similar author: Ming-Syan Chen with score: 0.700325512265
+8th similar author: Haixun Wang with score: 0.689992141374
+9th similar author: Jian Pei with score: 0.673844113923
+10th similar author: Rakesh Agrawal with score: 0.666542240884
+
+JIawei Han
+
+a=0.05
+
+STEP1: loading author paper relationship...
+STEP2: loading paper id and names...
+STEP3: loading paper citation relations...
+STEP4: calculating first order adjacency matrix and citation counts...
+STEP5: calculating/loading second order adjacency matrix...
+STEP6: calculating/loading third order adjacency matrix...
+STEP7: calculating proximity ranking ...
+====================================================
+Proximity ranking scores for author: Jiawei Han
+====================================================
+1th similar author: Jiawei Han with score: 1.0
+2th similar author: Jeffrey Xu Yu with score: 0.707323775384
+3th similar author: Wei Wang with score: 0.509081413338
+4th similar author: Haixun Wang with score: 0.484786569201
+5th similar author: Jiong Yang with score: 0.437956856883
+6th similar author: Jian Pei with score: 0.403921426312
+7th similar author: Christos Faloutsos with score: 0.400319077285
+8th similar author: Ming-Syan Chen with score: 0.382498904212
+9th similar author: Heikki Mannila with score: 0.376448852153
+10th similar author: Mong-Li Lee with score: 0.294539794849
+STEP8: loading authors and author ids ...
+STEP9: calculating author paper adjacency matrix ...
+STEP10: calculating venue paper adjacency matrix ...
+STEP11: calculating M matrix ...
+STEP12: calculating pathsim ranking ...
+====================================================
+PathSim ranking scores for author: Jiawei Han
+====================================================
+1th similar author: Jiawei Han with score: 1.0
+2th similar author: Philip S. Yu with score: 0.994516332098
+3th similar author: Christos Faloutsos with score: 0.929898603528
+4th similar author: Divesh Srivastava with score: 0.827231135241
+5th similar author: W. Bruce Croft with score: 0.809349039058
+6th similar author: Gerhard Weikum with score: 0.794258733707
+7th similar author: Wei Wang with score: 0.79037601562
+8th similar author: Hans-Peter Kriegel with score: 0.786448987844
+9th similar author: Hector Garcia-Molina with score: 0.774400897856
+10th similar author: Rakesh Agrawal with score: 0.761950114546
+STEP13: calculating combined score ...
+====================================================
+Combined ranking scores for author: Jiawei Han
+====================================================
+1th similar author: Jiawei Han with score: 1.0
+2th similar author: Jeffrey Xu Yu with score: 0.682755186703
+3th similar author: Christos Faloutsos with score: 0.665108840406
+4th similar author: Wei Wang with score: 0.649728714479
+5th similar author: Haixun Wang with score: 0.566225484771
+6th similar author: Jian Pei with score: 0.556000215248
+7th similar author: Raghu Ramakrishnan with score: 0.491272855388
+8th similar author: Philip S. Yu with score: 0.484288954914
+9th similar author: Gerhard Weikum with score: 0.479941931414
+10th similar author: Rakesh Agrawal with score: 0.471268296268
+
+
+a=0.1 jiawei
+
+STEP1: loading author paper relationship...
+STEP2: loading paper id and names...
+STEP3: loading paper citation relations...
+STEP4: calculating first order adjacency matrix and citation counts...
+STEP5: calculating/loading second order adjacency matrix...
+STEP6: calculating/loading third order adjacency matrix...
+STEP7: calculating proximity ranking ...
+====================================================
+Proximity ranking scores for author: Jiawei Han
+====================================================
+1th similar author: Jiawei Han with score: 1.0
+2th similar author: Jeffrey Xu Yu with score: 0.63232469184
+3th similar author: Wei Wang with score: 0.475738931209
+4th similar author: Haixun Wang with score: 0.417371702066
+5th similar author: Jiong Yang with score: 0.393390996315
+6th similar author: Heikki Mannila with score: 0.362850280318
+7th similar author: Jian Pei with score: 0.33928585771
+8th similar author: Ming-Syan Chen with score: 0.319224136867
+9th similar author: Raghu Ramakrishnan with score: 0.288088676719
+10th similar author: Mong-Li Lee with score: 0.283787777964
+STEP8: loading authors and author ids ...
+STEP9: calculating author paper adjacency matrix ...
+STEP10: calculating venue paper adjacency matrix ...
+STEP11: calculating M matrix ...
+STEP12: calculating pathsim ranking ...
+====================================================
+PathSim ranking scores for author: Jiawei Han
+====================================================
+1th similar author: Jiawei Han with score: 1.0
+2th similar author: Philip S. Yu with score: 0.994516332098
+3th similar author: Christos Faloutsos with score: 0.929898603528
+4th similar author: Divesh Srivastava with score: 0.827231135241
+5th similar author: W. Bruce Croft with score: 0.809349039058
+6th similar author: Gerhard Weikum with score: 0.794258733707
+7th similar author: Wei Wang with score: 0.79037601562
+8th similar author: Hans-Peter Kriegel with score: 0.786448987844
+9th similar author: Hector Garcia-Molina with score: 0.774400897856
+10th similar author: Rakesh Agrawal with score: 0.761950114546
+STEP13: calculating combined score ...
+====================================================
+Combined ranking scores for author: Jiawei Han
+====================================================
+1th similar author: Jiawei Han with score: 1.0
+2th similar author: Jeffrey Xu Yu with score: 0.645255644931
+3th similar author: Wei Wang with score: 0.633057473415
+4th similar author: Christos Faloutsos with score: 0.535205362313
+5th similar author: Haixun Wang with score: 0.532518051204
+6th similar author: Jian Pei with score: 0.523682430947
+7th similar author: Raghu Ramakrishnan with score: 0.495691515105
+8th similar author: Gerhard Weikum with score: 0.472831279483
+9th similar author: Zheng Chen with score: 0.451869991469
+10th similar author: Nick Koudas with score: 0.442581557877
+
+a=0.2
+
+STEP1: loading author paper relationship...
+STEP2: loading paper id and names...
+STEP3: loading paper citation relations...
+STEP4: calculating first order adjacency matrix and citation counts...
+STEP5: calculating/loading second order adjacency matrix...
+STEP6: calculating/loading third order adjacency matrix...
+STEP7: calculating proximity ranking ...
+====================================================
+Proximity ranking scores for author: Jiawei Han
+====================================================
+1th similar author: Jiawei Han with score: 1.0
+2th similar author: Jeffrey Xu Yu with score: 0.631980277909
+3th similar author: Wei Wang with score: 0.463874567703
+4th similar author: Jiong Yang with score: 0.394634020083
+5th similar author: Haixun Wang with score: 0.385701490492
+6th similar author: Heikki Mannila with score: 0.35157593163
+7th similar author: Ming-Syan Chen with score: 0.314912240889
+8th similar author: Jian Pei with score: 0.310620229993
+9th similar author: Raghu Ramakrishnan with score: 0.299622479699
+10th similar author: Mong-Li Lee with score: 0.295149391882
+STEP8: loading authors and author ids ...
+STEP9: calculating author paper adjacency matrix ...
+STEP10: calculating venue paper adjacency matrix ...
+STEP11: calculating M matrix ...
+STEP12: calculating pathsim ranking ...
+====================================================
+PathSim ranking scores for author: Jiawei Han
+====================================================
+1th similar author: Jiawei Han with score: 1.0
+2th similar author: Philip S. Yu with score: 0.994516332098
+3th similar author: Christos Faloutsos with score: 0.929898603528
+4th similar author: Divesh Srivastava with score: 0.827231135241
+5th similar author: W. Bruce Croft with score: 0.809349039058
+6th similar author: Gerhard Weikum with score: 0.794258733707
+7th similar author: Wei Wang with score: 0.79037601562
+8th similar author: Hans-Peter Kriegel with score: 0.786448987844
+9th similar author: Hector Garcia-Molina with score: 0.774400897856
+10th similar author: Rakesh Agrawal with score: 0.761950114546
+STEP13: calculating combined score ...
+====================================================
+Combined ranking scores for author: Jiawei Han
+====================================================
+1th similar author: Jiawei Han with score: 1.0
+2th similar author: Jeffrey Xu Yu with score: 0.645083437966
+3th similar author: Wei Wang with score: 0.627125291662
+4th similar author: Haixun Wang with score: 0.516682945417
+5th similar author: Jian Pei with score: 0.509349617089
+6th similar author: Christos Faloutsos with score: 0.505051286235
+7th similar author: Raghu Ramakrishnan with score: 0.501458416595
+8th similar author: Gerhard Weikum with score: 0.474414807298
+9th similar author: Zheng Chen with score: 0.456785429998
+10th similar author: Nick Koudas with score: 0.44567788473
+
+a=0.3
+
+STEP1: loading author paper relationship...
+STEP2: loading paper id and names...
+STEP3: loading paper citation relations...
+STEP4: calculating first order adjacency matrix and citation counts...
+STEP5: calculating/loading second order adjacency matrix...
+STEP6: calculating/loading third order adjacency matrix...
+STEP7: calculating proximity ranking ...
+====================================================
+Proximity ranking scores for author: Jiawei Han
+====================================================
+1th similar author: Jiawei Han with score: 1.0
+2th similar author: Jeffrey Xu Yu with score: 0.62940740028
+3th similar author: Wei Wang with score: 0.451720990486
+4th similar author: Jiong Yang with score: 0.394634020083
+5th similar author: Haixun Wang with score: 0.385701490492
+6th similar author: Heikki Mannila with score: 0.349138468613
+7th similar author: Ming-Syan Chen with score: 0.314912240889
+8th similar author: Jian Pei with score: 0.303331205617
+9th similar author: Raghu Ramakrishnan with score: 0.299622479699
+10th similar author: Mong-Li Lee with score: 0.295149391882
+STEP8: loading authors and author ids ...
+STEP9: calculating author paper adjacency matrix ...
+STEP10: calculating venue paper adjacency matrix ...
+STEP11: calculating M matrix ...
+STEP12: calculating pathsim ranking ...
+====================================================
+PathSim ranking scores for author: Jiawei Han
+====================================================
+1th similar author: Jiawei Han with score: 1.0
+2th similar author: Philip S. Yu with score: 0.994516332098
+3th similar author: Christos Faloutsos with score: 0.929898603528
+4th similar author: Divesh Srivastava with score: 0.827231135241
+5th similar author: W. Bruce Croft with score: 0.809349039058
+6th similar author: Gerhard Weikum with score: 0.794258733707
+7th similar author: Wei Wang with score: 0.79037601562
+8th similar author: Hans-Peter Kriegel with score: 0.786448987844
+9th similar author: Hector Garcia-Molina with score: 0.774400897856
+10th similar author: Rakesh Agrawal with score: 0.761950114546
+STEP13: calculating combined score ...
+====================================================
+Combined ranking scores for author: Jiawei Han
+====================================================
+1th similar author: Jiawei Han with score: 1.0
+2th similar author: Jeffrey Xu Yu with score: 0.643796999152
+3th similar author: Wei Wang with score: 0.621048503053
+4th similar author: Haixun Wang with score: 0.516682945417
+5th similar author: Jian Pei with score: 0.505705104901
+6th similar author: Raghu Ramakrishnan with score: 0.501458416595
+7th similar author: Christos Faloutsos with score: 0.501271636658
+8th similar author: Gerhard Weikum with score: 0.474414807298
+9th similar author: Zheng Chen with score: 0.456785429998
+10th similar author: Nick Koudas with score: 0.44567788473
+
+a=0.3 beta=0.3
+
+STEP1: loading author paper relationship...
+STEP2: loading paper id and names...
+STEP3: loading paper citation relations...
+STEP4: calculating first order adjacency matrix and citation counts...
+STEP5: calculating/loading second order adjacency matrix...
+STEP6: calculating/loading third order adjacency matrix...
+STEP7: calculating proximity ranking ...
+====================================================
+Proximity ranking scores for author: Jiawei Han
+====================================================
+1th similar author: Jiawei Han with score: 1.0
+2th similar author: Heikki Mannila with score: 0.554426609806
+3th similar author: Jiong Yang with score: 0.489728742722
+4th similar author: Wei Wang with score: 0.386956078187
+5th similar author: Il-Yeol Song with score: 0.383689840556
+6th similar author: Arbee L. P. Chen with score: 0.370456874211
+7th similar author: Tao Li with score: 0.339700792252
+8th similar author: Eui-Hong Han with score: 0.339010663734
+9th similar author: Ophir Frieder with score: 0.329163379
+10th similar author: Jeffrey Xu Yu with score: 0.326752377831
+STEP8: loading authors and author ids ...
+STEP9: calculating author paper adjacency matrix ...
+STEP10: calculating venue paper adjacency matrix ...
+STEP11: calculating M matrix ...
+STEP12: calculating pathsim ranking ...
+====================================================
+PathSim ranking scores for author: Jiawei Han
+====================================================
+1th similar author: Jiawei Han with score: 1.0
+2th similar author: Philip S. Yu with score: 0.994516332098
+3th similar author: Christos Faloutsos with score: 0.929898603528
+4th similar author: Divesh Srivastava with score: 0.827231135241
+5th similar author: W. Bruce Croft with score: 0.809349039058
+6th similar author: Gerhard Weikum with score: 0.794258733707
+7th similar author: Wei Wang with score: 0.79037601562
+8th similar author: Hans-Peter Kriegel with score: 0.786448987844
+9th similar author: Hector Garcia-Molina with score: 0.774400897856
+10th similar author: Rakesh Agrawal with score: 0.761950114546
+STEP13: calculating combined score ...
+====================================================
+Combined ranking scores for author: Jiawei Han
+====================================================
+1th similar author: Jiawei Han with score: 1.0
+2th similar author: Wei Wang with score: 0.588666046904
+3th similar author: Heikki Mannila with score: 0.534218921006
+4th similar author: Raghu Ramakrishnan with score: 0.504154240978
+5th similar author: Jeffrey Xu Yu with score: 0.492469487927
+6th similar author: Gerhard Weikum with score: 0.487181751066
+7th similar author: Tao Li with score: 0.442346590514
+8th similar author: Jeffrey F. Naughton with score: 0.425386728174
+9th similar author: Nick Koudas with score: 0.418548491708
+10th similar author: Zheng Chen with score: 0.400653906814
