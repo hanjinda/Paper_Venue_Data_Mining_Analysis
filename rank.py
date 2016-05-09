@@ -6,11 +6,11 @@ import Queue as Q
 from calculateProximityRankScore import calculateProximityRankScore
 
 # Parameters #
-queryAuthor = "Jiawei Han"
-secondOrderThreshold = 0.1
+queryAuthor = "Jian Pei"
+secondOrderThreshold = 0.15
 thirdOrderThreshold = 0.1
 # score = alpha * proximityRankScore + (1-alpha) * pathSimRankScore 
-alpha = 0.5
+alpha = 0.7
 
 ######################################################################
 #
@@ -174,7 +174,7 @@ print "Proximity ranking scores for author: " + queryAuthor
 print "===================================================="
 
 for i in range(10):
-    print str(i+1)+"th similar author: "+ proximitySortedAuthorScore[i][1] +" with score: "+str(proximitySortedAuthorScore[i][0])
+    print str(i+1)+"th similar author: "+ proximitySortedAuthorScore[i][1] +" with score: "+str(proximitySortedAuthorScore[i][0]/proximitySortedAuthorScore[0][0])
 
 
 ######################################################################
