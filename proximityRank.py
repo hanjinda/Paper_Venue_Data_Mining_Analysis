@@ -115,8 +115,6 @@ else:
     np.save('W_third.npy', W_second)
 
 
-
-
 # query for author similarity
 
 
